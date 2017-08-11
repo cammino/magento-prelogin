@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Cammino_Prelogin>
+            <version>0.0.1</version>
+        </Cammino_Prelogin>
+    </modules>
+    <global>
+    	<helpers>
+    		<camminoprelogin>
+    			<class>Cammino_Prelogin_Helper</class>
+    		</camminoprelogin>
+    	</helpers>
+    </global>
+    <frontend>
+        <routers>
+            <camminoprelogin>
+                <use>standard</use>
+                <args>
+                    <module>Cammino_Prelogin</module>
+                    <frontName>camminoprelogin</frontName>
+                </args>
+            </camminoprelogin>
+        </routers>
+    </frontend>
+</config>
